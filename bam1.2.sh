@@ -18,7 +18,7 @@ AZ=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -s "$BASE_URL/meta-data/placemen
 HOST_NAME=$(hostname -f)
 
 # Create simple webpage and save to /var/www/html/index.html
-# EOF marks where the HTML starts and stops basically
+# EOF marks where the HTML starts and stops basically 
 cat << EOF > /var/www/html/index.html
 <!doctype html>
 <html lang=\"en\" class=\"h-100\">
@@ -27,11 +27,14 @@ cat << EOF > /var/www/html/index.html
 </head>
 <body>
 <div>
-<h1>"I, Jerome, Thank Theo And Jorge, For Teaching Me About Ec2s In Aws. One Step Closer To Escaping Keisha!</h1>
+<h1>I, Jerome, Thank Theo And Jorge, For Teaching Me About Ec2s In Aws. One Step Closer To Escaping Keisha!</h1>
 
 <h1>With This Class, I Will Net 350,000 Per Year!</h1>
 
 <iframe src="https://giphy.com/embed/SwassP88T7p7h90zKr" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dritanalsela-colombia-latte-art-dritan-SwassP88T7p7h90zKr">via GIPHY</a></p>
+<br>
+<div class="tenor-gif-embed" data-postid="16100539" data-share-method="host" data-aspect-ratio="0.79375" data-width="40%"><a href="https://tenor.com/view/mari-gonzalez-brazilian-model-workout-working-out-pretty-gif-16100539">Mari Gonzalez Brazilian Model GIF</a>from <a href="https://tenor.com/search/mari+gonzalez-gifs">Mari Gonzalez GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<br>
 
 <h1>I found my wife on a party yacht in Colombia! Her name is Marisol</h1>
 
@@ -39,8 +42,6 @@ cat << EOF > /var/www/html/index.html
 
 <br>
 
-<div class="tenor-gif-embed" data-postid="20449609" data-share-method="host" data-aspect-ratio="1" data-width="40%"><a href="https://tenor.com/view/girlfriends-beach-walking-beautiful-blacksweet-gif-20449609">Girlfriends Beach GIF</a>from <a href="https://tenor.com/search/girlfriends-gifs">Girlfriends GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-<br>
 <h2>Instance Details</h2>
     <p><strong>Hostname:</strong> ${HOST_NAME}</p>
     <p><strong>Private IP:</strong> ${LOCAL_IP}</p>
